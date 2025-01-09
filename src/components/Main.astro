@@ -1,0 +1,413 @@
+---
+// Add your icon imports here
+import { Image } from "astro:assets";
+import meImage from "../assets/me.jpeg";
+---
+
+<main class="container max-w-[1200px] mx-auto p-8 md:p-4">
+  <section class="hero text-center mb-12">
+    <div class="avatar w-[150px] h-[150px] mx-auto mb-8">
+      <Image
+        src={meImage}
+        alt="Marko Jakic"
+        width={150}
+        height={150}
+        class="w-full h-full rounded-full object-cover border-3 border-white/10"
+      />
+    </div>
+    <h1
+      class="text-5xl md:text-4xl m-0 p-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"
+    >
+      Marko Jakic
+    </h1>
+    <h2 class="text-2xl text-gray-400 my-2">Full Stack Developer</h2>
+    <p class="intro max-w-[600px] mx-auto my-4 leading-relaxed">
+      Passionate full-stack developer specializing in Node.js ecosystem with 12+
+      years of experience in both frontend and backend development. Creating
+      scalable web applications and elegant user experiences.
+    </p>
+    <div
+      class="contact-info flex flex-wrap gap-6 justify-center items-center mt-6 text-gray-300"
+    >
+      <a
+        href="mailto:jakicmeister@gmail.com"
+        class="flex items-center gap-2 hover:text-white transition-colors duration-200"
+        title="Send me an email"
+      >
+        <span
+          class="bg-white/5 px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-200"
+        >
+          jakicmeister@gmail.com
+        </span>
+      </a>
+      <a
+        href="tel:+491713365532"
+        class="flex items-center gap-2 hover:text-white transition-colors duration-200"
+        title="Call me"
+      >
+        <span
+          class="bg-white/5 px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-200"
+        >
+          +49 171 336 55 32
+        </span>
+      </a>
+    </div>
+
+    <a
+      href="/resume_Marko.pdf"
+      target="_blank"
+      class="inline-block mt-6 mb-4 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-200 hover:scale-105 border border-white/10"
+      title="View Full Resume"
+    >
+      View Full Resume
+    </a>
+
+    <div class="social-links flex gap-4 justify-center mt-4">
+      <a
+        href="https://github.com/mk0y"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub Profile"
+        class="w-6 h-6 text-gray-400 hover:text-white hover:scale-110 transition-transform duration-200"
+      >
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS4yNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1naXRodWIiPjxwYXRoIGQ9Ik0xNSAyMnYtNGE0LjggNC44IDAgMCAwLTEtMy41YzMgMCA2LTIgNi01LjUuMDgtMS4yNS0uMjctMi40OC0xLTMuNS4yOC0xLjE1LjI4LTIuMzUgMC0zLjUgMCAwLTEgMC0zIDEuNS0yLjY0LS41LTUuMzYtLjUtOCAwQzYgMiA1IDIgNSAyYy0uMyAxLjE1LS4zIDIuMzUgMCAzLjVBNS40MDMgNS40MDMgMCAwIDAgNCA5YzAgMy41IDMgNS41IDYgNS41LS4zOS40OS0uNjggMS4wNS0uODUgMS42NS0uMTcuNi0uMjIgMS4yMy0uMTUgMS44NXY0Ii8+PHBhdGggZD0iTTkgMThjLTQuNTEgMi01LTItNy0yIi8+PC9zdmc+"
+          alt="GitHub"
+          class="w-6 h-6"
+        />
+      </a>
+      <a
+        href="https://linkedin.com/in/markojakic"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn Profile"
+        class="w-6 h-6 text-gray-400 hover:text-white hover:scale-110 transition-transform duration-200"
+      >
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS4yNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1saW5rZWRpbiI+PHBhdGggZD0iTTE2IDhhNiA2IDAgMCAxIDYgNnY3aC00di03YTIgMiAwIDAgMC0yLTIgMiAyIDAgMCAwLTIgMnY3aC00di03YTYgNiAwIDAgMSA2LTZ6Ii8+PHJlY3Qgd2lkdGg9IjQiIGhlaWdodD0iMTIiIHg9IjIiIHk9IjkiLz48Y2lyY2xlIGN4PSI0IiBjeT0iNCIgcj0iMiIvPjwvc3ZnPg=="
+          alt="LinkedIn"
+          class="w-6 h-6"
+        />
+      </a>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h3>Technical Skills</h3>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4>Frontend</h4>
+        <ul>
+          <li>React.js / Next.js</li>
+          <li>Astro</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+          <li>Zustand, Redux Toolkit, ...</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <ul>
+          <li>Node.js / Bun / Deno</li>
+          <li>Fastify, Hono, Koa, ...</li>
+          <li>GraphQL</li>
+          <li>REST APIs</li>
+          <li>Fly.io, Netlify, Vercel</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Database & Tools</h4>
+        <ul>
+          <li>MongoDB / Atlas</li>
+          <li>PostgreSQL</li>
+          <li>Docker</li>
+          <li>Redis</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <h3>Recent Professional Experience</h3>
+    <div class="experience-item">
+      <div class="experience-header">
+        <h4>Freelance full stack developer</h4>
+        <span class="company">Freelance</span>
+        <span class="date">2024 - Present</span>
+      </div>
+      <ul>
+        <li>
+          E-Commerce platform using headless framework Medusa.js 2.0 built on
+          top of Next.js/React and PostgreSQL
+        </li>
+        <li>
+          Frontend: Next.js(React) application for sellers of the products
+        </li>
+        <li>TailwindCSS + Shadcn as style system</li>
+        <li>Medusa authentication/authorization</li>
+        <li>Next-intl for i18n</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <div class="experience-header">
+        <h4>Freelance developer & agency owner</h4>
+        <span class="company">Vertrical GmbH</span>
+        <span class="date">2020 - 2023</span>
+      </div>
+      <ul>
+        <li>
+          I co-founded the agency Vertrical with two other co-founders after
+          Covid happened
+        </li>
+        <li>
+          Vertrical builds scalable and compliant digital health software for
+          its clients
+        </li>
+        <li>
+          Developed Rx delivery e-commerce apps built on full-stack Next.js and
+          Nest.js with GraphQL & Postgres
+        </li>
+        <li>
+          Mentored junior developers and led code review processes and hiring
+          process
+        </li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <div class="experience-header">
+        <h4>Freelance full-stack developer</h4>
+        <span class="company">Joyn GmbH</span>
+        <span class="date">2019 - 2020</span>
+      </div>
+      <ul>
+        <li>
+          Developed a license management service which is part of a microservice
+          architecture (Node.js, Kafka, Docker, AWS)
+        </li>
+        <li>
+          Frontend app for monitoring and managing licenses built on React.js
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h3>Open Source</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>
+          <a
+            class="hover:text-sky-400"
+            href="https://github.com/mk0y/dragforge"
+            target="_blank">Dragforge Website Builder</a
+          >
+        </h4>
+        <p>
+          AI powered website builder with drag and drop interface. React
+          components are generated using prompt engineering.
+        </p>
+        <div class="project-tags">
+          <span>TypeScript</span>
+          <span>Next.js</span>
+          <span>Zustand</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>
+          <a
+            class="hover:text-sky-400"
+            href="https://github.com/farspeak/farspeak-js">Farspeak</a
+          >
+        </h4>
+        <p>
+          The "talk to your data" library for JavaScript. It uses MongoDB Atlas
+          and vector search to provide RAG functionality.
+        </p>
+        <div class="project-tags">
+          <span>TypeScript</span>
+          <span>MongoDB Atlas</span>
+          <span>Vector Search</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>
+          <a
+            class="hover:text-sky-400"
+            href="https://github.com/nearup-io/nodb-js">Nodb</a
+          >
+        </h4>
+        <p>
+          Similar to Farspeak, but it uses PostgreSQL and Pgvector vector search
+          to provide RAG functionality. It comes with an API and NPM package.
+        </p>
+        <div class="project-tags">
+          <span>TypeScript</span>
+          <span>PostgreSQL</span>
+          <span>Pgvector</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-400 text-sm pb-8">
+    <p>© {new Date().getFullYear()} Marko Jakic. All rights reserved.</p>
+  </footer>
+</main>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  section {
+    margin-bottom: 4rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    background: linear-gradient(to right, #fff, #a8a8a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #a8a8a8;
+    margin: 0.5rem 0;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #fff, #a8a8a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .intro {
+    max-width: 600px;
+    margin: 1rem auto;
+    line-height: 1.6;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .social-links a {
+    color: #d7d7d7;
+    font-size: 1.5rem;
+  }
+
+  .skill-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .skill-group ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-group li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+  }
+
+  .experience-item {
+    margin-bottom: 2rem;
+  }
+
+  .experience-header {
+    margin-bottom: 1rem;
+  }
+
+  .company,
+  .date {
+    color: #a8a8a8;
+    margin-right: 1rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    transition: transform 0.2s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .project-tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .avatar {
+    margin: 0 auto 2rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 1.5rem;
+    }
+  }
+</style>
